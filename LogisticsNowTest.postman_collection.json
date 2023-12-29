@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "100c270b-033e-4fe9-8c3d-c16ce86c99dd",
+		"name": "LogisticsNowTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32053620"
+	},
+	"item": [
+		{
+			"name": "getEvents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.6"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Dec 2023 13:58:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "560"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\": 0, \"created_at\": \"2023-12-29T13:56:46Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 1, \"created_at\": \"2023-12-29T13:56:46Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 2, \"created_at\": \"2023-12-29T13:56:46Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 3, \"created_at\": \"2023-12-29T13:56:46Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 4, \"created_at\": \"2023-12-29T13:56:46Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}]"
+				}
+			]
+		},
+		{
+			"name": "postEvents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/post_events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"post_events"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/post_events",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"post_events"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.6"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Dec 2023 13:59:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "672"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\": 0, \"created_at\": \"2023-12-29T13:59:30Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 1, \"created_at\": \"2023-12-29T13:59:30Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 2, \"created_at\": \"2023-12-29T13:59:30Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 3, \"created_at\": \"2023-12-29T13:59:30Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 4, \"created_at\": \"2023-12-29T13:59:30Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 6, \"created_at\": \"2023-12-29T13:59:33Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}]"
+				}
+			]
+		},
+		{
+			"name": "deleteEvents",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete_events/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete_events",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/delete_events/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"delete_events",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.6"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Dec 2023 14:03:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "448"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\": 0, \"created_at\": \"2023-12-29T14:03:06Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 2, \"created_at\": \"2023-12-29T14:03:06Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 3, \"created_at\": \"2023-12-29T14:03:06Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}, {\"id\": 4, \"created_at\": \"2023-12-29T14:03:06Z\", \"event_category\": \"Logistics\", \"company_name\": \"LogisticsNow\"}]"
+				}
+			]
+		}
+	]
+}
